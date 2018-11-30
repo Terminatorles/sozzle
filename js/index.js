@@ -840,7 +840,7 @@ $(function () {
                   'sengoathoana','feta','holimo','eohle','morena','seterateng','intshi','atisa','feletseng',
                   'putsoa','ntho','phela','tebileng','khoeli','sehlekehlekeng'];
 
-    words = _.sample(dictionary, 20);
+    words =   _.sample(dictionary, 20);
 
 
   // start a word find game
