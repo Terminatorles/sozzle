@@ -824,7 +824,7 @@
 }(document, jQuery, wordfind));
 
 $(function () {
-  //my code
+  //This variable is a dictionary of Sotho words
   var dictionary =['fihla', 'leoatle', 'atamela', 'tloha', 'morao', 'matha', 'tobetsa', 'haufi','bosiu',
                   'sebele', 'bophelo', 'buka','joang','bolella','moea','bapala','naheng','theoha','mosebetsi',
                   'khutlela','motho','molemo','foromo','moshanyana','khathala','tlisa','tlatsa','pente',
@@ -857,7 +857,7 @@ $(function () {
   });
 
   $('#reset').click( function() {
-    wordfindgame.solve(gamePuzzle, words);
+     location.reload();
   });
   // create just a puzzle, without filling in the blanks and print to console
   var puzzle = wordfind.newPuzzle(
