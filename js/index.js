@@ -39,8 +39,8 @@
     var allOrientations = ['horizontal','horizontalBack','vertical','verticalUp',
                            'diagonal','diagonalUp','diagonalBack','diagonalUpBack'];
 
-    // The definition of the orientation, calculates the next square given a
-    // starting square (x,y) and distance (i) from that square.
+    //The definition of the orientation, calculates the next square given a
+    //starting square (x,y) and distance (i) from that square.
     var orientations = {
       horizontal:     function(x,y,i) { return {x: x+i, y: y  }; },
       horizontalBack: function(x,y,i) { return {x: x-i, y: y  }; },
@@ -825,13 +825,22 @@
 
 $(function () {
   //my code
-  var oldWords = ['fihla', 'leoatle', 'atamela', 'tloha', 'morao', 'matha', 'tobetsa', 'haufi', 'bosiu', 'sebele', 'bophelo', 'buka',
-      'joang','bolella','moea','bapala','naheng','theoha','mosebetsi','phela','khutlela','motho','molemo','foromo','moshanyana','khathala'
-      ,'tlisa','tlatsa','pente','motse','ntle','itseng','fofa','lebisa','mohoo'
-      ,'lefifi','mochine','hlokomela','moralo','palo','naleli','lereho','tšimo'
-      ,'khona','tsoe','botle','ema','ruta','tala','leoatle'];
+  var dictionary =['fihla', 'leoatle', 'atamela', 'tloha', 'morao', 'matha', 'tobetsa', 'haufi','bosiu',
+                  'sebele', 'bophelo', 'buka','joang','bolella','moea','bapala','naheng','theoha','mosebetsi',
+                  'khutlela','motho','molemo','foromo','moshanyana','khathala','tlisa','tlatsa','pente',
+                  'ntle','itseng','fofa','lebisa','mohoo','lefifi','mochine','hlokomela','moralo','palo',
+                  'naleli','lereho','khona','tsoe','botle','ema','ruta','tala','leoatle','lesedi','motse',
+                  'atamela','tloha','morao','matha','tobetsa','haufi','bosiu','sebele','bophelo','leboea',
+                  'kamoreng','motsoalle','maikutlo','litlhapi','thabeng','hang','botlaaseng','utloa','pere',
+                  'sehiloeng','bonnete','shebella','sefahleho','lehong','bulehileng','bonahala','hammoho',
+                  'mohlala','kokobetsa','pampiri','sehlopha','kamehla','hangata','koloi','tlhokomelo','bobeli',
+                  'thota','ngoanana','tloaelehileng','itokiselitse','khubelu','lethathamo','ikutloa','nonyana',
+                  'mele','ntja','lelapa','eachother','tlohela','pina','lekanya','ntlo','sehlahiswa','batsho',
+                  'khutšoanyane','moea','potso','etsahala','feletseng','halofo','lefika','mollo','bothata',
+                  'sengoathoana','feta','holimo','eohle','morena','seterateng','intshi','atisa','feletseng',
+                  'putsoa','ntho','phela','tebileng','khoeli','sehlekehlekeng'];
 
-    words = _.sample(oldWords, 20);
+    words = _.sample(dictionary, 20);
 
 
   // start a word find game
@@ -846,7 +855,7 @@ $(function () {
   $('#solve').click( function() {
     wordfindgame.solve(gamePuzzle, words);
   });
-  
+
   $('#reset').click( function() {
     wordfindgame.solve(gamePuzzle, words);
   });
