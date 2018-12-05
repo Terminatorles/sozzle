@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Terminatorles/sozzle/issues"
   },
-  "homepage": "https://github.com/Terminatorles/sozzle#readme"
+  "homepage": "https://github.com/Terminatorles/sozzle#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
