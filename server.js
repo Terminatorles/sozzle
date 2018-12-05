@@ -13,4 +13,4 @@ app.get('/', function(req, res){
 
 server = app.listen(2086);
 
-console.log(server is up);
+console.log('server is up');
