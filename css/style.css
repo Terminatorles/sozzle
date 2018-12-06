@@ -96,7 +96,7 @@ button::-moz-focus-inner {
 #words {
   width: 250px;
   color: #ffff00;
-  float: center;
+  float: left;
   margin-top: 37px;
   /*font-size: : 60px; */
 }
