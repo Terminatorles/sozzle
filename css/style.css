@@ -7,17 +7,18 @@
 */
 body {
       /*background: #0C8331;*/
-     /*background-image: url('marko-blazevic-561418-unsplash.jpg'); */
-    /* background-image: url('atik-sulianami-796825-unsplash.jpg'); */
+     /* background-image: url('marko-blazevic-561418-unsplash.jpg'); */
+    background-image: url('atik-sulianami-796825-unsplash.jpg'); 
     /* background-image: url('brady-frieden-365163-unsplash.jpg'); */
     /* background-image: url('denise-chan-21350-unsplash.jpg'); */
-    /* background-image: url('rawpixel-561416-unsplash.jpg'); */
     /* background-image: url('rawpixel-593612-unsplash.jpg'); */
     /* background-image: url('rawpixel-600789-unsplash.jpg'); */
-      background-image: url('teddy-kelley-181683-unsplash.jpg');
-      /*background-image: url('marko-blazevic-299203-unsplash.jpg');*/*/
+      /* background-image: url('teddy-kelley-181683-unsplash.jpg'); */
+      /*background-image: url('marko-blazevic-299203-unsplash.jpg');*/
+      background-position: center;
       background-repeat: no-repeat;
-      background-size: 1050px 670px; /*length bredth or top to bottom*/
+      background-size: cover;  /*length bredth or top to bottom*/
+      /* 1050px 670px;*/
 }
 
 .puzzleWrap {
@@ -60,6 +61,7 @@ p {
   font-family: "Times New Roman", Times, serif;
   /*font: 1em sans-serif;*/
   color: #800080;
+
 }
 
 button::-moz-focus-inner {
